@@ -47,18 +47,38 @@ public class DP_algorithm {
         return results[idx];
     }
     static int[] results;
-    public static void main(String[] args){
-
+    /**
+     * 解法三：
+     * 优化之后的算法
+     * 我们将递归式更改为递推式
+     * 递归式是从上往下，递推式是从底网上
+     * */
+    public static void get_result(){
         int[] nums = new int[3];
         nums[0] = 1;
         nums[1] = 2;
         nums[2] = 3;
         results = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            results[i] = -1;
+        results[0] = nums[0];
+        results[1] = Math.max(nums[0],nums[1]);
+        for(int i=2;i<nums.length;i++){
+            results[i] = Math.max(nums[i]+results[i-2],results[i-1]);
         }
+        System.out.print(results[nums.length-1]);
+    }
+    public static void main(String[] args){
 
-        int result = solve2(nums.length-1, nums);
-        System.out.print(result);
+//        int[] nums = new int[3];
+//        nums[0] = 1;
+//        nums[1] = 2;
+//        nums[2] = 3;
+//        results = new int[nums.length];
+//        for (int i = 0; i < nums.length; i++) {
+//            results[i] = -1;
+//        }
+//
+//        int result = solve2(nums.length-1, nums);
+//        System.out.print(result);
+        get_result();
     }
 }
