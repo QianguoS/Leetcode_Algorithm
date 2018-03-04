@@ -140,9 +140,35 @@ public class algorithm {
         });
         return res;
     }
+    //===============pow(x,n)==================
+    /**
+     * Implement pow(x, n).
+     *Example 1:
+     *Input: 2.00000, 10
+     *Output: 1024.00000
+     * */
+    public static double fastpow(double x,int n){
+        if(n==0){
+            return 1.0;
+        }
+        double half = fastpow(x,n/2);
+        if(n%2==0){
+            return half*half;
+        }else{
+            return half*half*x;
+        }
+    }
+    public static double myPow(double x, int n) {
+        if(n<0){
+            x = 1/x;
+            n = -n;
+        }
+        return fastpow(x,n);
+    }
 
     public static void main(String[] args){
         //pertations();
         combines(5,3);
+        //System.out.println(myPow(2.0,4));
     }
 }
