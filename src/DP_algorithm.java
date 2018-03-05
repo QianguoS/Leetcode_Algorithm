@@ -66,6 +66,33 @@ public class DP_algorithm {
         }
         System.out.print(results[nums.length-1]);
     }
+
+    //=================动态规划第二题=====================================//
+    /**
+     * 求斐波那契数列*/
+    //第一种解法，这一种方式复杂度很高，面试官到时候肯定还会问有没有优化算法，这个时候
+    // 仿照上一题存储计算过的中间变量。这一步留给读者完成。如果大家遇到问题可以发送给。
+    static int fib(int n){
+        if(n<=2){
+            return 1;
+        }
+
+        return fib(n-1)+fib(n-2);
+    }
+    //第二种解法使用递推公式解决
+    static int fib_ditui(int n){
+        int[] fib = new int[n];
+        fib[0] = 1;
+        fib[1] = 1;
+
+        for(int i=3;i<=n;i++){
+            fib[i] = fib[i-1]+fib[i-2];
+        }
+        return fib[n-1];
+
+    }
+    //=================动态规划第三题=====================================//
+
     public static void main(String[] args){
 
 //        int[] nums = new int[3];
