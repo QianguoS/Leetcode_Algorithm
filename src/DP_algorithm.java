@@ -189,6 +189,9 @@ public class DP_algorithm {
         }
         return dp[amount] > amount ? -1 : dp[amount];
     }
+    //=================动态规划第五题=====================================//
+    //最长公共子序列
+    //旅行商问题
 
     public static void main(String[] args){
 
