@@ -170,8 +170,8 @@ public class DP_algorithm {
         }
     }
 
-    //solution2
-    public static int coinChange(int[] coins, int amount) {
+    //solution2 采用递推公式求解
+    public static int coinChanges(int[] coins, int amount) {
         int maxValue = amount+1;
         int[] dp = new int[amount+1];
         dp[0] = 0;
