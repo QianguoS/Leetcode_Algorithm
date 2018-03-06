@@ -133,6 +133,63 @@ public class DP_algorithm {
         return f[idx][s];
     }
 
+    //=================动态规划第四题=====================================//
+    /**
+     * You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+
+     Example 1:
+     coins = [1, 2, 5], amount = 11
+     return 3 (11 = 5 + 5 + 1)
+
+     Example 2:
+     coins = [2], amount = 3
+     return -1.
+
+     Note:
+     You may assume that you have an infinite number of each kind of coin.*/
+    //solution1 暴力解法
+    public static int maxValue = 1000000;
+    public int search(int idx,int amount,int[] coins){
+        if(amount==0){
+            return 0;
+        }
+        if(amount < 0){
+            return maxValue;
+        }
+        if(idx>=coins.length){
+            return maxValue;
+        }
+        return Math.min(search(idx, amount-coins[idx],coins)+1,search(idx+1, amount,coins));
+    }
+    public int coinChange(int[] coins, int amount) {
+        int res = search(0,amount,coins);
+        if(res<maxValue){
+            return res;
+        }else{
+            return -1;
+        }
+    }
+
+    //solution2
+    public static int coinChange(int[] coins, int amount) {
+        int maxValue = amount+1;
+        int[] dp = new int[amount+1];
+        dp[0] = 0;
+        for(int i=1;i<=amount;i++){
+            dp[i] = maxValue;
+        }
+
+        for(int i=1;i<=amount;i++){
+            for(int j=0;j<coins.length;j++){
+                if(i>=coins[j]){
+                    dp[i] = Math.min(dp[i],dp[i-coins[j]]+1);
+                }
+            }
+
+        }
+        return dp[amount] > amount ? -1 : dp[amount];
+    }
+
     public static void main(String[] args){
 
 //        int[] nums = new int[3];
@@ -146,6 +203,7 @@ public class DP_algorithm {
 //
 //        int result = solve2(nums.length-1, nums);
 //        System.out.print(result);
-        get_result();
+        //get_result();
+
     }
 }
