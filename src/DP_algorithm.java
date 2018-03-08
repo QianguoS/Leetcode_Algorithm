@@ -192,6 +192,26 @@ public class DP_algorithm {
     //=================动态规划第五题=====================================//
     //最长公共子序列
     //旅行商问题
+    //下面是旅行商问题的伪代码，仅供参考
+    boolean visit[];
+    int[][] map;
+    int min=1000;
+    //int n;
+    int search_tsp(int idx,int count){
+        if(count==n)return 0;
+
+        for(int i=0;i<n;i++){
+            if(!visit[i]){
+                visit[i] = true;
+               int t = search_tsp(i,count+1)+map[idx][i];
+               if(t<min){
+                   min = t;
+               }
+               visit[i] = false;
+            }
+        }
+        return min;
+    }
 
     public static void main(String[] args){
 
