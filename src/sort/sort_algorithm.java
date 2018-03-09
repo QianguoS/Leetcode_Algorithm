@@ -44,9 +44,28 @@ public class sort_algorithm {
             System.out.print(nums[st]+" ");
         }
     }
+    //选择排序算法
+    public static void select_sort(){
+        int n = nums.length;
+        for(int i=0;i<n-1;i++){
+            int index = i;
+            for(int j=i+1;j<n;j++){
+                if(nums[j]<nums[index]){
+                    index = j;
+                }
+            }
+            if(index!=i){
+                swap(i,index);
+            }
+        }
+        for(int st=0;st<n;st++){
+            System.out.print(nums[st]+" ");
+        }
+    }
 
     public static void main(String[] args){
         //maopao_sort();
-        insert_sort();
+        //insert_sort();
+        select_sort();
     }
 }
