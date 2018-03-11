@@ -5,6 +5,7 @@ package sort;
 
 public class sort_algorithm {
     public static int[] nums = new int[]{5,2,6,3,7,8,9,1};
+
     //冒泡排序算法
     public static void maopao_sort(){
         int n = nums.length;
@@ -79,7 +80,7 @@ public class sort_algorithm {
         }else{
             int partion = getPartions(left,right);
             recquick_sort(left,partion-1);
-            recquick_sort(partion,right);
+            recquick_sort(partion+1,right);
         }
     }
 
@@ -87,7 +88,7 @@ public class sort_algorithm {
         int leftPtr = left;
         int rightPtr = right-1;
         while(true){
-            while(leftPtr<right && nums[leftPtr]<nums[right]) leftPtr++;
+            while(leftPtr<right && nums[leftPtr]<=nums[right]) leftPtr++;
             while(rightPtr>=0 && nums[rightPtr]>nums[right])rightPtr--;
             if(leftPtr<rightPtr){
                 swap(leftPtr,rightPtr);
@@ -100,12 +101,37 @@ public class sort_algorithm {
 
 
     }
+    //希尔排序
+    public static void shell_sort(){
+        int n = nums.length;
+        int h=1;
+        int out,inner;
+        while(h<=(n/3)){
+            h = h*3+1;
+        }
+        while(h>0){
+            for(out=h;out<n;out++){
+                int temp = nums[out];
+                inner = out;
+                while (inner>h-1 && nums[inner-h]> temp){
+                    nums[inner] = nums[inner-h];
+                    inner -= h;
+                }
+                nums[inner] = temp;
+            }
+            h = (h-1)/3;
+        }
+        for(int st=0;st<nums.length;st++){
+            System.out.print(nums[st]+" ");
+        }
 
+    }
 
     public static void main(String[] args){
         //maopao_sort();
         //insert_sort();
         //select_sort();
-        quick_sort();
+        //quick_sort();
+        shell_sort();//{5,2,6,3,7,8,9,1}
     }
 }
