@@ -62,10 +62,50 @@ public class sort_algorithm {
             System.out.print(nums[st]+" ");
         }
     }
+    //快速排序
+    public static void quick_sort(){
+        for(int st=0;st<nums.length;st++){
+            System.out.print(nums[st]+" ");
+        }
+        System.out.println();
+        recquick_sort(0,nums.length-1);
+        for(int st=0;st<nums.length;st++){
+            System.out.print(nums[st]+" ");
+        }
+    }
+    public static void recquick_sort(int left,int right){
+        if(left>=right){
+            return;
+        }else{
+            int partion = getPartions(left,right);
+            recquick_sort(left,partion-1);
+            recquick_sort(partion,right);
+        }
+    }
+
+    private static int getPartions(int left, int right) {
+        int leftPtr = left;
+        int rightPtr = right-1;
+        while(true){
+            while(leftPtr<right && nums[leftPtr]<nums[right]) leftPtr++;
+            while(rightPtr>=0 && nums[rightPtr]>nums[right])rightPtr--;
+            if(leftPtr<rightPtr){
+                swap(leftPtr,rightPtr);
+            }else{
+                break;
+            }
+        }
+        swap(leftPtr,right);
+        return leftPtr;
+
+
+    }
+
 
     public static void main(String[] args){
         //maopao_sort();
         //insert_sort();
-        select_sort();
+        //select_sort();
+        quick_sort();
     }
 }
