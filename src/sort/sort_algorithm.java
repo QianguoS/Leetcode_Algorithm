@@ -4,7 +4,8 @@ package sort;
 
 
 public class sort_algorithm {
-    public static int[] nums = new int[]{5,2,6,3,7,8,9,1};
+    //public static int[] nums = new int[]{5,2,6,3,7,8,9,1};
+    public static int[] nums = new int[]{122,87,78,45,17,65,53,9,32};
 
     //冒泡排序算法
     public static void maopao_sort(){
@@ -113,7 +114,7 @@ public class sort_algorithm {
             for(out=h;out<n;out++){
                 int temp = nums[out];
                 inner = out;
-                while (inner>h-1 && nums[inner-h]> temp){
+                while (inner>h-1 && nums[inner-h] > temp){
                     nums[inner] = nums[inner-h];
                     inner -= h;
                 }
@@ -127,11 +128,42 @@ public class sort_algorithm {
 
     }
 
+    //堆排序
+    public static void heap_sort(){
+        int length = nums.length;
+        for(int i=length-1;i>0;i--){
+            swap(i,0);
+            sink(0,i);
+        }
+        for(int st=0;st<nums.length;st++){
+            System.out.print(nums[st]+" ");
+        }
+    }
+
+    private static void sink(int k, int len) {
+        int temp = nums[0];
+        for(int i = 2*k+1;i<len;i=2*k+1){
+            if(i<len-1 && nums[i]<nums[i+1]){
+                i++;
+            }
+            if(temp>nums[i]){
+                break;
+            }else{
+                nums[k] = nums[i];
+                k = i;
+
+            }
+        }
+        nums[k] = temp;
+    }
+
     public static void main(String[] args){
         //maopao_sort();
         //insert_sort();
         //select_sort();
         //quick_sort();
-        shell_sort();//{5,2,6,3,7,8,9,1}
+        //shell_sort();//{5,2,6,3,7,8,9,1}
+        heap_sort();
+
     }
 }
