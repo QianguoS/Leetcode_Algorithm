@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b65bb5e-d7be-4608-8498-748a31c27446" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" afterPath="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" />
       <change beforePath="$PROJECT_DIR$/src/sort/sort_algorithm.java" afterPath="$PROJECT_DIR$/src/sort/sort_algorithm.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,30 +26,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="niuke_algorithm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="niuke_algorithm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7280">
-              <caret line="216" column="34" lean-forward="false" selection-start-line="216" selection-start-column="34" selection-end-line="216" selection-end-column="34" />
+            <state relative-caret-position="2363">
+              <caret line="304" column="0" lean-forward="true" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#4236#4237#0" expanded="true" />
-                <element signature="e#4274#4275#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#4155#4156#0" expanded="true" />
+                <element signature="e#4193#4194#0" expanded="true" />
+                <element signature="e#6727#6728#0" expanded="true" />
+                <element signature="e#6767#6768#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sort_algorithm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sort_algorithm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sort/sort_algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6440">
-              <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="184" selection-end-column="24" />
+            <state relative-caret-position="333">
+              <caret line="159" column="13" lean-forward="false" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
               <folding>
-                <element signature="e#4405#4406#0" expanded="true" />
-                <element signature="e#4433#4434#0" expanded="true" />
+                <element signature="e#4278#4279#0" expanded="true" />
+                <element signature="e#4306#4307#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +81,8 @@
         <option value="$PROJECT_DIR$/src/BinarySearch.java" />
         <option value="$PROJECT_DIR$/src/DP_algorithm.java" />
         <option value="$PROJECT_DIR$/src/algorithm.java" />
-        <option value="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" />
         <option value="$PROJECT_DIR$/src/sort/sort_algorithm.java" />
+        <option value="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" />
       </list>
     </option>
   </component>
@@ -105,6 +108,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,10 +125,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.sort_algorithm">
+  <component name="RunManager" selected="Application.niuke_algorithm">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -313,8 +316,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.sort_algorithm" />
-        <item index="1" class="java.lang.String" itemvalue="Application.niuke_algorithm" />
+        <item index="0" class="java.lang.String" itemvalue="Application.niuke_algorithm" />
+        <item index="1" class="java.lang.String" itemvalue="Application.sort_algorithm" />
         <item index="2" class="java.lang.String" itemvalue="Application.BinarySearch" />
         <item index="3" class="java.lang.String" itemvalue="Application.DP_algorithm" />
         <item index="4" class="java.lang.String" itemvalue="Application.algorithm" />
@@ -349,7 +352,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30975956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30975956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -401,21 +404,23 @@
           <caret line="216" column="34" lean-forward="false" selection-start-line="216" selection-start-column="34" selection-end-line="216" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4193#4194#0" expanded="true" />
+            <element signature="e#6727#6728#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sort/sort_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5110">
-          <caret line="146" column="8" lean-forward="true" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+        <state relative-caret-position="5565">
+          <caret line="159" column="13" lean-forward="true" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
           <folding>
-            <element signature="e#4405#4406#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,10 +439,47 @@
           <caret line="216" column="34" lean-forward="false" selection-start-line="216" selection-start-column="34" selection-end-line="216" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4193#4194#0" expanded="true" />
+            <element signature="e#6727#6728#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sort/sort_algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5110">
+          <caret line="146" column="8" lean-forward="true" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+          <folding>
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7560">
+          <caret line="216" column="34" lean-forward="false" selection-start-line="216" selection-start-column="34" selection-end-line="216" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4193#4194#0" expanded="true" />
+            <element signature="e#6727#6728#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -447,8 +489,8 @@
         <state relative-caret-position="5180">
           <caret line="148" column="29" lean-forward="true" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
           <folding>
-            <element signature="e#4405#4406#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -467,10 +509,12 @@
           <caret line="206" column="31" lean-forward="true" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4193#4194#0" expanded="true" />
+            <element signature="e#6727#6728#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -480,8 +524,8 @@
         <state relative-caret-position="2240">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
-            <element signature="e#4405#4406#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,10 +544,12 @@
           <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4193#4194#0" expanded="true" />
+            <element signature="e#6727#6728#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -513,8 +559,8 @@
         <state relative-caret-position="2450">
           <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding>
-            <element signature="e#4405#4406#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,27 +701,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/sort/sort_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7280">
-          <caret line="216" column="34" lean-forward="false" selection-start-line="216" selection-start-column="34" selection-end-line="216" selection-end-column="34" />
+        <state relative-caret-position="333">
+          <caret line="159" column="13" lean-forward="false" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4306#4307#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sort/sort_algorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6440">
-          <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="184" selection-end-column="24" />
+        <state relative-caret-position="2363">
+          <caret line="304" column="0" lean-forward="true" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
           <folding>
-            <element signature="e#4405#4406#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4193#4194#0" expanded="true" />
+            <element signature="e#6727#6728#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
           </folding>
         </state>
       </provider>

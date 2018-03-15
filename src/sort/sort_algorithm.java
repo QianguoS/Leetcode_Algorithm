@@ -5,7 +5,7 @@ package sort;
 
 public class sort_algorithm {
     //public static int[] nums = new int[]{5,2,6,3,7,8,9,1};
-    public static int[] nums = new int[]{122,87,78,45,17,65,53,9,32};
+    //public static int[] nums = new int[]{122,87,78,45,17,65,53,9,32};
 
     //冒泡排序算法
     public static void maopao_sort(int[] a){
@@ -21,11 +21,7 @@ public class sort_algorithm {
             System.out.print(a[i]+" ");
         }
     }
-    private static void swap(int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-    }
+
     //插入排序算法
     public static void insert_sort(int[] a){
         int n = a.length;

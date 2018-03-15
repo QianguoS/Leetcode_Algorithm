@@ -1,10 +1,7 @@
 package niuke;
 
 import javax.sql.rowset.spi.SyncProvider;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class niuke_algorithm {
     /**
@@ -233,24 +230,80 @@ public class niuke_algorithm {
         System.out.println(count-1);
         return count;
     }
+    //最大连续子数组
+    public static void max_sequence(int[] a){
+        int thisSum = 0,maxSum = 0;
+        for(int i = 0;i<a.length;i++){
+            thisSum+=a[i];
+            if(thisSum<0){
+                thisSum=0;
+            }else if(thisSum>maxSum){
+                maxSum = thisSum;
+            }
+        }
+        System.out.println(maxSum);
+    }
+    //按层次打印二叉树的节点数值
+    public static class TreeNodes {
+        int data;
+        TreeNodes left;
+        TreeNodes right;
+
+        public TreeNodes(int data) {
+            this.data = data;
+        }
+    }
+    public static void print_cengci(TreeNodes root){
+        Queue<TreeNodes> quenue = new LinkedList<>();
+        quenue.add(root);
+        TreeNodes last = root;
+        TreeNodes nLast = root;
+        while(!quenue.isEmpty()){
+            TreeNodes t = quenue.poll();
+            System.out.print(t.data + " ");
+            if(t.left!=null){
+                quenue.add(t.left);
+                nLast = t.left;
+
+            }
+            if(t.right!=null){
+                quenue.add(t.right);
+                nLast = t.right;
+            }
+            if(last == t){
+                System.out.println();
+                last = nLast;
+            }
+        }
+
+
+    }
+
+
+
+
     public static void main(String[] args){
         int[] nums = new int[]{2,4,5,5,5,5,5,6,8,9};
-        GetNumberOfK(nums,5);
+        //GetNumberOfK(nums,5);
+        int[] a = new int[]{2,4,-5,6,-1,9,-5};
+        //max_sequence(a);
 
 
 
-//        TreeNode phead = new TreeNode(5);
-//        TreeNode pcurr = phead;
-//        pcurr.left = new TreeNode(4);
-//        pcurr = pcurr.left;
-//        pcurr.left = new TreeNode(11);
-//        pcurr.right = new TreeNode(2);
-//        pcurr = phead;
-//        pcurr.right = new TreeNode(8);
-//        pcurr = pcurr.right;
-//        pcurr.left = new TreeNode(13);
-//        pcurr.right = new TreeNode(4);
-//        FindPath(phead,17);
+        TreeNodes phead = new TreeNodes(5);
+        TreeNodes pcurr = phead;
+        pcurr.left = new TreeNodes(4);
+        pcurr = pcurr.left;
+        pcurr.left = new TreeNodes(11);
+        pcurr.right = new TreeNodes(2);
+        pcurr = phead;
+        pcurr.right = new TreeNodes(8);
+        pcurr = pcurr.right;
+        pcurr.left = new TreeNodes(13);
+        pcurr.right = new TreeNodes(4);
+        print_cengci(phead);
+
+        //FindPath(phead,17);
         //
 //        ListNode phead1 = new ListNode(6);
 //        ListNode phead2 = new ListNode(2);
