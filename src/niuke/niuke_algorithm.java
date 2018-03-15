@@ -278,6 +278,65 @@ public class niuke_algorithm {
 
 
     }
+    /*
+    * 题目：
+ 给定一个无序数组，包含正数、负数和0，要求从中找出3个数的乘积，使得乘积最大，
+ 要求时间复杂度：O(n)，空间复杂度：O(1)**/
+    public static void get_maxNum(int[] a){
+        if(a==null || a.length<3){
+            return;
+        }
+        PriorityQueue<Integer> maxPQ = new PriorityQueue<>();
+        PriorityQueue<Integer> minPQ = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2-o1;
+            }
+        });
+        for(int i=0;i<a.length;i++){
+            if(maxPQ.size()<3 || a[i]>=maxPQ.peek()){
+                offerMax(maxPQ,a[i]);
+            }
+            if(minPQ.size()<2 || a[i]<=minPQ.peek()){
+                offerMin(minPQ,a[i]);
+            }
+        }
+        int max1 = maxPQ.poll();
+        int max2 = maxPQ.poll();
+        int max3 = maxPQ.poll();
+        int min1 = minPQ.poll();
+        int min2 = minPQ.poll();
+        int max = Math.max(max1*max2*max3,min1*min2*max3);
+        System.out.println(max);
+
+    }
+
+    private static void offerMin(PriorityQueue<Integer> minPQ, int i) {
+        minPQ.offer(i);
+        if(minPQ.size()>2)minPQ.poll();
+    }
+
+    private static void offerMax(PriorityQueue<Integer> maxPQ, int i) {
+        maxPQ.offer(i);
+        if(maxPQ.size()>3)maxPQ.poll();
+    }
+
+
+
+    //n从1开始，每个操作可以对n加1或加倍，如果要使n是2014，
+    // 最少需要 个操作。
+    public static void get_minStep(int target){
+        int[] nums = new int[target+1];
+        nums[1] = 0;
+        int i;
+        for(i=2;i<=target;i++){
+            nums[i] = nums[i-1]+1;
+            if(i%2==0){
+                nums[i] = Math.min(nums[i],nums[i/2]+1);
+            }
+        }
+        System.out.println(nums[--i]);
+    }
 
 
 
@@ -285,8 +344,10 @@ public class niuke_algorithm {
     public static void main(String[] args){
         int[] nums = new int[]{2,4,5,5,5,5,5,6,8,9};
         //GetNumberOfK(nums,5);
-        int[] a = new int[]{2,4,-5,6,-1,9,-5};
+        int[] a = new int[]{2,10,-5,-1,3,-4};
         //max_sequence(a);
+        //get_minStep(2014);
+        get_maxNum(a);
 
 
 
