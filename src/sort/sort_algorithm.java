@@ -85,8 +85,8 @@ public class sort_algorithm {
         int leftPtr = left;
         int rightPtr = right-1;
         while(true){
-            while(leftPtr<right && a[leftPtr]<=a[right]) leftPtr++;
-            while(rightPtr>=0 && a[rightPtr]>a[right])rightPtr--;
+            while(leftPtr<right && a[leftPtr]<a[right]) leftPtr++;
+            while(rightPtr>=0 && a[rightPtr]>=a[right])rightPtr--;
             if(leftPtr<rightPtr){
                 swap(a,leftPtr,rightPtr);
             }else{
@@ -144,6 +144,48 @@ public class sort_algorithm {
             sink(a,i,a.length);
         }
     }
+    //归并排序
+    public static void mer_sort(int[] a){
+        sort(a,0,a.length-1);
+        for(int st=0;st<a.length;st++){
+            System.out.print(a[st]+" ");
+        }
+    }
+
+    private static void sort(int[] a, int left, int right) {
+        if(left<right){
+            int mid = left+((right-left)>>1);
+            sort(a,left,mid);
+            sort(a,mid+1,right);
+            meger(a,left,mid,right);
+        }
+    }
+
+    private static void meger(int[] a, int left, int mid, int right) {
+        int[] tempArr = new int[a.length];
+        int start = left;
+        int tmp = 0;
+        int R = mid+1;
+        while(left<=mid && R<=right){
+            if(a[left]<a[R]){
+                tempArr[tmp++] = a[left++];
+
+            }else{
+                tempArr[tmp++] = a[R++];
+            }
+        }
+        while(left<=mid){
+            tempArr[tmp++] = a[left++];
+        }
+        while(R<=right){
+            tempArr[tmp++] = a[R++];
+        }
+        tmp = 0;
+        while(start<=right){
+            a[start++] = tempArr[tmp++];
+        }
+
+    }
 
     private static void sink(int[] a, int i, int length) {
         while(i<length){
@@ -181,6 +223,7 @@ public class sort_algorithm {
         //quick_sort(a);
         //shell_sort(a);//{5,2,6,3,7,8,9,1}
         //heap_sort(a);
+        mer_sort(a);
 
     }
 }
