@@ -339,30 +339,80 @@ public class niuke_algorithm {
     }
 
 
+    //全排列
+    public static List<List<Integer>> results = new ArrayList<>();
+    public static int[] paths = new int[100];
+    public static boolean[] v = new boolean[100];
+    public static void all_pailie(int[] nums,int idx){
+        if(idx>=nums.length){
+            List<Integer> temp = new ArrayList<>();
+            for(int i=0;i<nums.length;i++){
+                temp.add(nums[paths[i]]);
+                System.out.print(nums[paths[i]]);
+                System.out.print(' ');
+            }
+            System.out.println();
+            results.add(temp);
+            return;
+        }
+        for(int i=0;i<nums.length;i++){
+            if(v[i]==false){
+                v[i] = true;
+                paths[idx] = i;
+                all_pailie(nums,idx+1);
+                v[i] = false;
+            }
+        }
+    }
+    //最大字段积
+    public static void max_ziduanji(int[] a){
+        int n = a.length;
+        int Maxsum=1,thisSum=1,Minsum=1;
+        for(int i=0;i<n;i++){
 
+            if(a[i]>0){
+                Maxsum = Maxsum*a[i];
+                Minsum = Math.min(Minsum*a[i],1);
+            }else if(a[i]==0){
+                Minsum = 0;
+                Maxsum = 0;
+            }else{
+                int temp = Maxsum;
+                Maxsum = Math.max(Minsum*a[i],1);
+                Minsum = Math.min(temp*a[i],a[i]);
+            }
+
+        }
+        System.out.println(Maxsum);
+    }
+    
 
     public static void main(String[] args){
         int[] nums = new int[]{2,4,5,5,5,5,5,6,8,9};
         //GetNumberOfK(nums,5);
         int[] a = new int[]{2,10,-5,-1,3,-4};
+        int[] seq = new int[]{1,2,3};
         //max_sequence(a);
         //get_minStep(2014);
-        get_maxNum(a);
+        //get_maxNum(a);
+        //all_pailie(seq,0);
+        int[] b = new int[]{3,2,-1,6,2};
+        max_ziduanji(b);
 
 
 
-        TreeNodes phead = new TreeNodes(5);
-        TreeNodes pcurr = phead;
-        pcurr.left = new TreeNodes(4);
-        pcurr = pcurr.left;
-        pcurr.left = new TreeNodes(11);
-        pcurr.right = new TreeNodes(2);
-        pcurr = phead;
-        pcurr.right = new TreeNodes(8);
-        pcurr = pcurr.right;
-        pcurr.left = new TreeNodes(13);
-        pcurr.right = new TreeNodes(4);
-        print_cengci(phead);
+        //TreeNodes phead = new TreeNodes(5);
+//        TreeNodes pcurr = phead;
+//        pcurr.left = new TreeNodes(4);
+//        pcurr = pcurr.left;
+//        pcurr.left = new TreeNodes(11);
+//        pcurr.right = new TreeNodes(2);
+//        pcurr = phead;
+//        pcurr.right = new TreeNodes(8);
+//        pcurr = pcurr.right;
+//        pcurr.left = new TreeNodes(13);
+//        pcurr.right = new TreeNodes(4);
+//        print_cengci(phead);
 
         //FindPath(phead,17);
         //

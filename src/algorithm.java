@@ -168,8 +168,8 @@ public class algorithm {
     }
 
     public static void main(String[] args){
-        //pertations();
-        combines(5,3);
+        pertations();
+        //combines(5,3);
         //System.out.println(myPow(2.0,4));
     }
 }
