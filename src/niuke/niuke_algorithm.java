@@ -385,7 +385,93 @@ public class niuke_algorithm {
         }
         System.out.println(Maxsum);
     }
-    
+
+    //两个大数相加
+    public static void big_add(String A,String B){
+        char[] dataA = A.toCharArray();
+        char[] dataB = B.toCharArray();
+        char[] temp1 = new char[dataA.length];
+        char[] temp2 = new char[dataB.length];
+        char[] result = new char[dataA.length>dataB.length ? dataA.length+1:dataB.length+1];
+        int j=0;
+        StringBuilder str = new StringBuilder();
+        for(int i=dataA.length-1;i>=0;i--){
+            temp1[j++] = dataA[i];
+        }
+        j=0;
+        for(int i=dataB.length-1;i>=0;i--){
+            temp2[j++] = dataB[i];
+        }
+        j=0;
+        int flag = 0;
+        while (j<temp1.length && j<temp2.length){
+            int sum = temp1[j]-'0'+temp2[j]-'0'+flag;
+            if(sum>9){
+                //result[j] = (char)(sum%10);
+                str.append(sum%10);
+                flag = 1;
+            }else{
+                //result[j] = (char)(sum);
+                str.append(sum);
+                flag=0;
+            }
+            j++;
+        }
+        while(j<dataA.length){
+            if(flag==1){
+                //result[j] = (char)(temp1[j]-'0'+flag);
+                str.append(temp1[j]-'0'+flag);
+                flag=0;
+            }
+            else {
+                str.append(temp1[j]);
+                //result[j] =temp1[j];
+            }
+            j++;
+        }
+
+        while(j<dataB.length){
+            if(flag==1){
+                result[j] = (char)(temp2[j]-'0'+flag);
+                flag=0;
+            }
+            else {
+                result[j] =temp2[j];
+            }
+            j++;
+        }
+        if(flag==1){
+            //result[j] = (char)flag;
+            str.append(flag);
+        }
+
+        System.out.print(str.toString());
+
+
+    }
+    //前k小的数
+    public static void getMinum(int[] a,int k){
+        PriorityQueue<Integer> minQuen = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2-o1;
+            }
+        });
+        for(int i=0;i<a.length;i++){
+            if(minQuen.size()<k || a[i]<minQuen.peek()){
+                add_to_quence(a[i],minQuen,k);
+            }
+        }
+        for(int i=0;i<k;i++){
+            System.out.println(minQuen.poll());
+        }
+    }
+
+    private static void add_to_quence(int i, PriorityQueue<Integer> minQuen,int k) {
+        minQuen.offer(i);
+        if(minQuen.size()>k)minQuen.poll();
+    }
+
 
     public static void main(String[] args){
         int[] nums = new int[]{2,4,5,5,5,5,5,6,8,9};
@@ -397,7 +483,9 @@ public class niuke_algorithm {
         //get_maxNum(a);
         //all_pailie(seq,0);
         int[] b = new int[]{3,2,-1,6,2};
-        max_ziduanji(b);
+        //max_ziduanji(b);
+        //big_add("12345","23456");
+        getMinum(a,3);
 
 
 
