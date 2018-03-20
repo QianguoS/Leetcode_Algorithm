@@ -472,6 +472,55 @@ public class niuke_algorithm {
         if(minQuen.size()>k)minQuen.poll();
     }
 
+    //三项切分快速排序
+    public static void three_cut_sort(int[] a){
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
+        rec_three_sort(a,0,a.length-1);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
+    }
+
+    private static void rec_three_sort(int[] a, int low, int high) {
+        if(low>=high){
+            return;
+        }
+        int lo=low;
+        int hi=high;
+        int piovt = a[low];
+        int i=low+1;
+        while(i<=hi){
+            if(a[i]<piovt){
+                swap(a,i++,lo++);
+            }else if(a[i]>piovt){
+                swap(a,i,hi--);
+            }else{
+                i++;
+            }
+        }
+        rec_three_sort(a,low,lo);
+        rec_three_sort(a,hi+1,high);
+    }
+
+    private static void swap(int[] a, int i, int i1) {
+        int temp = a[i];
+        a[i] = a[i1];
+        a[i1] = temp;
+    }
+    //数组中次数超过一半的数
+    public static void count_than_half(int[] a){
+        three_cut_sort(a);
+        int num = a[a.length/2];
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            if(a[i]==num)count++;
+        }
+        System.out.println("num count"+count);
+    }
 
     public static void main(String[] args){
         int[] nums = new int[]{2,4,5,5,5,5,5,6,8,9};
@@ -485,7 +534,9 @@ public class niuke_algorithm {
         int[] b = new int[]{3,2,-1,6,2};
         //max_ziduanji(b);
         //big_add("12345","23456");
-        getMinum(a,3);
+        //getMinum(a,3);
+        int[] c = new int[]{2,5,1,2,2,2,7,9,2};
+        count_than_half(c);
 
 
 
