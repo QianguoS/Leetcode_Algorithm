@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b65bb5e-d7be-4608-8498-748a31c27446" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/from_chao_shen.java" afterPath="$PROJECT_DIR$/src/from_chao_shen.java" />
       <change beforePath="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" afterPath="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,7 +19,7 @@
       <file leaf-file-name="algorithm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-245">
+            <state relative-caret-position="1960">
               <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
               <folding />
             </state>
@@ -28,12 +29,14 @@
       <file leaf-file-name="niuke_algorithm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="488" column="0" lean-forward="true" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
+            <state relative-caret-position="3906">
+              <caret line="549" column="25" lean-forward="true" selection-start-line="549" selection-start-column="25" selection-end-line="549" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
                 <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#2767#2782#0" expanded="true" />
+                <element signature="e#3813#3822#0" expanded="true" />
                 <element signature="e#4155#4156#0" expanded="true" />
                 <element signature="e#4193#4194#0" expanded="true" />
                 <element signature="e#6727#6728#0" expanded="true" />
@@ -47,11 +50,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="from_chao_shen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/from_chao_shen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1400">
+              <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Tsp_solution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tsp_solution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1785">
-              <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+              <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding>
                 <element signature="e#1475#1476#0" expanded="true" />
                 <element signature="e#1505#1506#0" expanded="true" />
@@ -99,11 +112,12 @@
         <option value="$PROJECT_DIR$/src/sort/sort_algorithm.java" />
         <option value="$PROJECT_DIR$/src/algorithm.java" />
         <option value="$PROJECT_DIR$/src/Tsp_solution.java" />
+        <option value="$PROJECT_DIR$/src/from_chao_shen.java" />
         <option value="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="2" />
     <option name="y" value="4" />
     <option name="width" value="1400" />
@@ -143,8 +157,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,20 +183,6 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="BinarySearch" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="leetcode" />
-      <envs />
     </configuration>
     <configuration name="Tsp_solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -215,6 +215,20 @@
     <configuration name="algorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="algorithm" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="leetcode" />
+      <envs />
+    </configuration>
+    <configuration name="from_chao_shen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="from_chao_shen" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -326,18 +340,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.algorithm" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BinarySearch" />
-      <item index="2" class="java.lang.String" itemvalue="Application.niuke_algorithm" />
-      <item index="3" class="java.lang.String" itemvalue="Application.sort_algorithm" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Tsp_solution" />
+      <item index="1" class="java.lang.String" itemvalue="Application.niuke_algorithm" />
+      <item index="2" class="java.lang.String" itemvalue="Application.sort_algorithm" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Tsp_solution" />
+      <item index="4" class="java.lang.String" itemvalue="Application.from_chao_shen" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.niuke_algorithm" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Tsp_solution" />
-        <item index="2" class="java.lang.String" itemvalue="Application.algorithm" />
-        <item index="3" class="java.lang.String" itemvalue="Application.sort_algorithm" />
-        <item index="4" class="java.lang.String" itemvalue="Application.BinarySearch" />
+        <item index="1" class="java.lang.String" itemvalue="Application.from_chao_shen" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Tsp_solution" />
+        <item index="3" class="java.lang.String" itemvalue="Application.algorithm" />
+        <item index="4" class="java.lang.String" itemvalue="Application.sort_algorithm" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="4" width="1400" height="820" extended-state="1" />
+    <frame x="2" y="4" width="1400" height="820" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -368,7 +382,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22489391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33380482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -393,31 +407,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15785">
-          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#4155#4156#0" expanded="true" />
-            <element signature="e#4193#4194#0" expanded="true" />
-            <element signature="e#6727#6728#0" expanded="true" />
-            <element signature="e#6767#6768#0" expanded="true" />
-            <element signature="e#7866#7867#0" expanded="true" />
-            <element signature="e#7910#7911#0" expanded="true" />
-            <element signature="e#12512#12513#0" expanded="true" />
-            <element signature="e#12556#12557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sort/sort_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5670">
@@ -467,6 +461,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -506,6 +502,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -534,6 +532,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -584,6 +584,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -612,6 +614,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -651,6 +655,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -690,6 +696,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -729,6 +737,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -768,6 +778,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />
@@ -938,7 +950,7 @@
     <entry file="file://$PROJECT_DIR$/src/Tsp_solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
-          <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
           <folding>
             <element signature="e#1475#1476#0" expanded="true" />
             <element signature="e#1505#1506#0" expanded="true" />
@@ -948,20 +960,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
+        <state relative-caret-position="1960">
           <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/from_chao_shen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="488" column="0" lean-forward="true" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
+        <state relative-caret-position="3906">
+          <caret line="549" column="25" lean-forward="true" selection-start-line="549" selection-start-column="25" selection-end-line="549" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2767#2782#0" expanded="true" />
+            <element signature="e#3813#3822#0" expanded="true" />
             <element signature="e#4155#4156#0" expanded="true" />
             <element signature="e#4193#4194#0" expanded="true" />
             <element signature="e#6727#6728#0" expanded="true" />

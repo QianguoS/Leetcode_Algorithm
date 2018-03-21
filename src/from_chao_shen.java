@@ -40,4 +40,5 @@ public class from_chao_shen {
         System.out.println(MoreThanHalfNum_Solution(array));
     }
 
+
 }

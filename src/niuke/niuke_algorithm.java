@@ -502,7 +502,7 @@ public class niuke_algorithm {
                 i++;
             }
         }
-        rec_three_sort(a,low,lo);
+        rec_three_sort(a,low,lo-1);
         rec_three_sort(a,hi+1,high);
     }
 
@@ -521,6 +521,28 @@ public class niuke_algorithm {
         }
         System.out.println("num count"+count);
     }
+    //二叉树的深度
+    public static int TreeDepth(TreeNode root) {
+        if(root==null) return 0;
+        int left = TreeDepth(root.left);
+        int right = TreeDepth(root.right);
+        return Math.max(left,right)+1;
+    }
+    //寻找数组中重复的元素
+    public static void find_dupli(int[] a){
+        int len = a.length;
+        for(int i=0;i<len;i++){
+
+            while(a[i]!=i){
+                if(a[i]==a[a[i]]){
+                    System.out.println("find the dulpli"+a[i]);
+                    break;
+                }
+                swap(a,i,a[i]);
+            }
+
+        }
+    }
 
     public static void main(String[] args){
         int[] nums = new int[]{2,4,5,5,5,5,5,6,8,9};
@@ -535,8 +557,26 @@ public class niuke_algorithm {
         //max_ziduanji(b);
         //big_add("12345","23456");
         //getMinum(a,3);
-        int[] c = new int[]{2,5,1,2,2,2,7,9,2};
-        count_than_half(c);
+        int[] c = new int[]{2,5,1,2,2,2,2};
+        //count_than_half(c);
+        //find_dupli(c);
+
+//        TreeNode phead = new TreeNode(5);
+//        TreeNode pcurr = phead;
+//        pcurr.left = new TreeNode(4);
+//        pcurr = pcurr.left;
+//        pcurr.left = new TreeNode(11);
+//        pcurr.right = new TreeNode(2);
+//        pcurr = phead;
+//        pcurr.right = new TreeNode(8);
+//        pcurr = pcurr.right;
+//        pcurr.left = new TreeNode(13);
+//        pcurr.right = new TreeNode(4);
+        //TreeDepth(phead);
+
+
+
+
 
 
 
