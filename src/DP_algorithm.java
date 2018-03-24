@@ -212,7 +212,27 @@ public class DP_algorithm {
         }
         return min;
     }
-
+    //从矩阵的左上角到右下角找一条最短路径
+    public static void findMiniumPath(int[][] distance){
+        int m = distance.length;
+        int n = distance[0].length;
+        int[][] sumDis = new int[m][n];
+        //第一行数据解决方式
+        sumDis[0][0] = distance[0][0];
+        for(int i=1;i<n;i++){
+            sumDis[0][i] = sumDis[0][i-1]+distance[0][i];
+        }
+        //第一列数据的解决方式
+        for(int i=1;i<m;i++){
+            sumDis[i][0] = sumDis[i-1][0]+distance[i][0];
+        }
+        for(int i=1;i<m;i++){
+            for(int j=0;j<n;j++){
+                sumDis[i][j] = Math.min(sumDis[i-1][j],sumDis[i][j-1])+distance[i][j];
+            }
+        }
+        System.out.println(sumDis[m-1][n-1]);
+    }
     public static void main(String[] args){
 
 //        int[] nums = new int[3];

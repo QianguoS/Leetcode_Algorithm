@@ -33,6 +33,8 @@ public class from_chao_shen {
         array[j] = array[i] ^ array[j];
         array[i] = array[i] ^ array[j];
     }
+    //
+
 
     public static void main(String[] args) {
         int[] array = {1,2,3,2,2,2,5,4,2};

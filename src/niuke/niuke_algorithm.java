@@ -543,6 +543,34 @@ public class niuke_algorithm {
 
         }
     }
+    //判断序列是否为二叉查找树序列
+    public static boolean isChazhaoshu(int[] a){
+        for(int i=0;i<a.length-1;i++){
+            int temp=a[i];
+            if(a[i+1]>a[i]){
+                int j=i+1;
+                while(j<a.length){
+                    if(a[j]>temp){
+                        j++;
+                    }else{
+                        return false;
+                    }
+                }
+            }else{
+                int j=i+1;
+                while(j<a.length){
+                    if(a[j]<temp){
+                        j++;
+                    }else{
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+    //
+
 
     public static void main(String[] args){
         int[] nums = new int[]{2,4,5,5,5,5,5,6,8,9};
@@ -558,8 +586,10 @@ public class niuke_algorithm {
         //big_add("12345","23456");
         //getMinum(a,3);
         int[] c = new int[]{2,5,1,2,2,2,2};
+        int[] d = new int[]{35,39,65,56};
         //count_than_half(c);
         //find_dupli(c);
+        System.out.println(isChazhaoshu(d));
 
 //        TreeNode phead = new TreeNode(5);
 //        TreeNode pcurr = phead;

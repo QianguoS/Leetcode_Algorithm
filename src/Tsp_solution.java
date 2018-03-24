@@ -1,5 +1,5 @@
 public class Tsp_solution {
-    static int cityNum = 4;
+    //static int cityNum = 4;
     static int[] s = new int[]{-1,-1,-1,-1};
     static int[][] distance = new int[][]{{999,2,6,5},
                                     {2,999,5,4},
@@ -48,8 +48,54 @@ public class Tsp_solution {
             all_distance+=distance[s[i+1]][s[i]];
         }
     }
+    public boolean[] row = new boolean[10];
+    public boolean[] col = new boolean[10];
+    static int cityNum = 4;
+    //public int[][] distance = new int[][]{};
+
+    //TSP solution2
+    public void solveTSP(){
+        int currentNode = 0;
+        int nextNode = 0;
+        int sumDistance = 0;
+        col[0] = true;
+        int[] temp = new int[distance[0].length];
+        while(!row[currentNode]){
+            for(int i=0;i<distance[0].length;i++){
+                temp[i] = distance[currentNode][i];
+            }
+            nextNode = selectMinDistance(temp);
+            sumDistance+=distance[currentNode][nextNode];
+            row[currentNode]=true;
+            col[nextNode] = true;
+            currentNode = nextNode;
+        }
+
+    }
+
+    private int selectMinDistance(int[] temp) {
+        int node=0,minDis = temp[0],minIndex=0;
+        while(col[node]){//寻找第一个可用节点
+            node++;
+            if(node>=cityNum){
+                minDis = temp[0];
+                break;
+            }else{
+                minDis = temp[node];
+            }
+        }
+        for(;node<cityNum;node++){
+            if(col[node]!=false){
+                if(minDis>temp[node]){
+                    minDis = temp[node];
+                    minIndex = node;
+                }
+            }
+        }
+        return minIndex;
+    }
 
     public static void main(String[] args){
-        tsp_solution();
+        //tsp_solution();
     }
 }
