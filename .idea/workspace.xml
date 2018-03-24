@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b65bb5e-d7be-4608-8498-748a31c27446" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/BinarySearchTree.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTW.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/meituan.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/DP_algorithm.java" afterPath="$PROJECT_DIR$/src/DP_algorithm.java" />
-      <change beforePath="$PROJECT_DIR$/src/Tsp_solution.java" afterPath="$PROJECT_DIR$/src/Tsp_solution.java" />
-      <change beforePath="$PROJECT_DIR$/src/from_chao_shen.java" afterPath="$PROJECT_DIR$/src/from_chao_shen.java" />
-      <change beforePath="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" afterPath="$PROJECT_DIR$/src/niuke/niuke_algorithm.java" />
+      <change beforePath="$PROJECT_DIR$/src/DTW.java" afterPath="$PROJECT_DIR$/src/DTW.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,9 +37,14 @@
       <file leaf-file-name="DTW.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DTW.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="248">
+              <caret line="92" column="5" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+              <folding>
+                <element signature="e#2194#2195#0" expanded="true" />
+                <element signature="e#2247#2248#0" expanded="true" />
+                <element signature="e#3367#3368#0" expanded="true" />
+                <element signature="e#3409#3410#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,8 +97,8 @@
       <file leaf-file-name="Tsp_solution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tsp_solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="97" column="43" lean-forward="false" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
+            <state relative-caret-position="350">
+              <caret line="50" column="6" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="95" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -449,7 +447,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -941,14 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tsp_solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="97" column="43" lean-forward="false" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1504">
@@ -1004,11 +994,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tsp_solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="50" column="6" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="95" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DTW.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="248">
+          <caret line="92" column="5" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+          <folding>
+            <element signature="e#2194#2195#0" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
+            <element signature="e#3367#3368#0" expanded="true" />
+            <element signature="e#3409#3410#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
