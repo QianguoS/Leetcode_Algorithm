@@ -167,8 +167,50 @@ public class algorithm {
         return fastpow(x,n);
     }
 
+    //判断一个序列是否为二叉查找序列
+    public static boolean isBinarySearch(int[] num){
+        int tmp1 = 0;
+        int tmp2 = 0;
+        int[] bidData = new int[num.length];
+        int[] smallData = new int[num.length];
+        for(int i=0;i<num.length-1;i++){
+            if(num[i]>num[num.length-1]){
+                bidData[tmp1++] = num[i];
+            }else{
+                smallData[tmp2++] = num[i];
+            }
+        }
+        for(int i=0;i<tmp1;i++){
+            if(bidData[i]<bidData[i+1])
+                return false;
+        }
+        for(int i=0;i<tmp2-1;i++){
+            if(smallData[i]>smallData[i+1])
+                return false;
+        }
+        return true;
+
+
+    }
+
+    private static void swap(int[] num, int tmp1, int tmp2) {
+        int temp = num[tmp1];
+        num[tmp1] = num[tmp2];
+        num[tmp2] = temp;
+    }
+    /**
+     * 给定一颗二叉排序树，给定一个节点，找出这个节点的下一个节点，
+     * 节点中包含了指向父节点的指针*/
+    public static void findNextNode(){
+
+    }
+
     public static void main(String[] args){
-        pertations();
+        int[] num = new int[]{21,12,9,11,10};
+        System.out.println(isBinarySearch(num));
+        isBinarySearch(num);
+
+        //pertations();
         //combines(5,3);
         //System.out.println(myPow(2.0,4));
     }

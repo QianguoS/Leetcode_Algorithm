@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class DP_algorithm {
     //=================动态规划第一题=====================================//
     /**
@@ -135,7 +137,10 @@ public class DP_algorithm {
 
     //=================动态规划第四题=====================================//
     /**
-     * You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+     * You are given coins of different denominations and a total amount of money amount.
+     * Write a function to compute the fewest number of coins that you need to make up
+     * that amount. If that amount of money cannot be made up by any combination of the
+     * coins, return -1.
 
      Example 1:
      coins = [1, 2, 5], amount = 11
@@ -233,8 +238,49 @@ public class DP_algorithm {
         }
         System.out.println(sumDis[m-1][n-1]);
     }
+    //n个数可以组成二叉查找树结构的数量
+    //solution1
+    public static void BinarySearchFind(int n){
+        if(n<=0)return;
+        int[] dp = new int[n+1];
+        dp[0] = 1;
+        //int sum = 0;
+        for (int i = 1; i <=n ; i++) {
+            for(int j = 1; j<=i;j++){
+                dp[i]+=dp[j-1]*dp[i-j];
+            }
+        }
+        System.out.println(dp[n]);
+
+    }
+    //solution2
+
+
+    //0-1背包问题
+    static int N = 10;
+    static int[][] res = new int[n][n];
+    public static int bag(int idx, int[] w,int[] v,int sum){
+        if(idx>N){
+            return 0;
+        }
+        if(sum<=0){
+            return 0;
+        }
+        if(res[idx][sum]>0){
+            return res[idx][sum];
+        }
+
+        res[idx][sum] = Math.max(bag(idx+1,w,v,sum),
+                bag(idx+1,w,v,sum-w[idx])+v[idx]);
+        return res[idx][sum];
+    }
+
+
+
+
     public static void main(String[] args){
 
+        BinarySearchFind(4);
 //        int[] nums = new int[3];
 //        nums[0] = 1;
 //        nums[1] = 2;
