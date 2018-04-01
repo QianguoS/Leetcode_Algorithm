@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b65bb5e-d7be-4608-8498-748a31c27446" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/findMedianNum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/niuke/reverseString.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/niuke/shaizi.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/niuke/xuanzhaun.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/maxValue.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/niuke/puKePai.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/mignqi/wangyi.java" afterPath="$PROJECT_DIR$/src/mignqi/wangyi.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,8 @@
       <file leaf-file-name="isMiorr.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/niuke/isMiorr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="1645">
+              <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -62,23 +59,43 @@
       <file leaf-file-name="sumNum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/niuke/sumNum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="595">
+              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="findMedianNum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="findMedianNum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/findMedianNum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="490">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1591#1592#0" expanded="true" />
                 <element signature="e#1635#1636#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="puKePai.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/niuke/puKePai.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-140">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maxValue.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/maxValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,6 +144,8 @@
         <option value="$PROJECT_DIR$/src/mignqi/wangyi.java" />
         <option value="$PROJECT_DIR$/src/niuke/shaizi.java" />
         <option value="$PROJECT_DIR$/src/findMedianNum.java" />
+        <option value="$PROJECT_DIR$/src/maxValue.java" />
+        <option value="$PROJECT_DIR$/src/niuke/puKePai.java" />
       </list>
     </option>
   </component>
@@ -175,9 +194,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.findMedianNum">
+  <component name="RunManager" selected="Application.puKePai">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -237,14 +256,28 @@
       <module name="leetcode" />
       <envs />
     </configuration>
-    <configuration name="reverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="maxValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="maxValue" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="leetcode" />
+      <envs />
+    </configuration>
+    <configuration name="puKePai" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="niuke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="niuke.reverseString" />
+      <option name="MAIN_CLASS_NAME" value="niuke.puKePai" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -264,25 +297,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="niuke.shaizi" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="leetcode" />
-      <envs />
-    </configuration>
-    <configuration name="wangyi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="mignqi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="mignqi.wangyi" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -374,19 +388,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.wangyi" />
-      <item index="1" class="java.lang.String" itemvalue="Application.reverseString" />
-      <item index="2" class="java.lang.String" itemvalue="Application.xuanzhaun" />
-      <item index="3" class="java.lang.String" itemvalue="Application.shaizi" />
-      <item index="4" class="java.lang.String" itemvalue="Application.findMedianNum" />
+      <item index="0" class="java.lang.String" itemvalue="Application.xuanzhaun" />
+      <item index="1" class="java.lang.String" itemvalue="Application.shaizi" />
+      <item index="2" class="java.lang.String" itemvalue="Application.findMedianNum" />
+      <item index="3" class="java.lang.String" itemvalue="Application.puKePai" />
+      <item index="4" class="java.lang.String" itemvalue="Application.maxValue" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.findMedianNum" />
-        <item index="1" class="java.lang.String" itemvalue="Application.shaizi" />
-        <item index="2" class="java.lang.String" itemvalue="Application.xuanzhaun" />
-        <item index="3" class="java.lang.String" itemvalue="Application.reverseString" />
-        <item index="4" class="java.lang.String" itemvalue="Application.wangyi" />
+        <item index="0" class="java.lang.String" itemvalue="Application.puKePai" />
+        <item index="1" class="java.lang.String" itemvalue="Application.maxValue" />
+        <item index="2" class="java.lang.String" itemvalue="Application.findMedianNum" />
+        <item index="3" class="java.lang.String" itemvalue="Application.shaizi" />
+        <item index="4" class="java.lang.String" itemvalue="Application.xuanzhaun" />
       </list>
     </recent_temporary>
   </component>
@@ -442,34 +456,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/findMedianNum.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sort/sort_algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5565">
-          <caret line="159" column="13" lean-forward="true" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/niuke/niuke_algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7560">
@@ -774,16 +765,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/niuke/sumNum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="595">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -830,21 +818,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/niuke/isMiorr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="1645">
+          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/findMedianNum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="490">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1591#1592#0" expanded="true" />
             <element signature="e#1635#1636#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/niuke/puKePai.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maxValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
