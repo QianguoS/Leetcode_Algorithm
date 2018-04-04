@@ -14,6 +14,8 @@ public class maxGupiao {
         System.out.println(maxValue);
     }
     public static void main(String[] args){
+        int[] num = new int[]{13,11,58,26,21};
+        getMax(num);
 
     }
 }
