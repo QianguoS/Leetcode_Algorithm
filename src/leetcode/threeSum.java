@@ -2,6 +2,7 @@ package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -14,25 +15,31 @@ import java.util.List;
 public class threeSum {
     public static List<List<Integer>> threeSums(int[] nums) {
         Arrays.sort(nums);
-        List<List<Integer>> result = new ArrayList<>();
+        List<List<Integer>> result = new LinkedList<>();
         if(nums.length == 0) return result;
         for (int i = 0; i < nums.length-2; i++) {
-            int low = i+1;
-            int high = nums.length-1;
-            while (low < high){
-                if(nums[low]+nums[high]==-nums[i]){
-                    ArrayList<Integer> temp = new ArrayList<>();
-                    temp.add(nums[i]);
-                    temp.add(nums[low]);
-                    temp.add(nums[high]);
-                    if(!result.contains(temp))
-                        result.add(temp);
-                    low++;
+            if (i == 0 || (i > 0 && nums[i] != nums[i-1])) {
+                int low = i + 1;
+                int high = nums.length - 1;
+                while (low < high) {
+                    if (nums[low] + nums[high] == -nums[i]) {
+                        ArrayList<Integer> temp = new ArrayList<>();
+                        temp.add(nums[i]);
+                        temp.add(nums[low]);
+                        temp.add(nums[high]);
+                        if (!result.contains(temp))
+                            result.add(temp);
+                        while (low < high && nums[low] == nums[low+1]) low++;
+                        while (low < high && nums[high] == nums[high-1]) high--;
+                        //lo++; hi--;
+                        low++;
+                        high--;
 
-                }else if(nums[low]+nums[high]+nums[i]>0){
-                    high--;
-                }else if(nums[low]+nums[high]+nums[i]<0){
-                    low++;
+                    } else if (nums[low] + nums[high] + nums[i] > 0) {
+                        high--;
+                    } else if (nums[low] + nums[high] + nums[i] < 0) {
+                        low++;
+                    }
                 }
             }
         }
