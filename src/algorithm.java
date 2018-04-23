@@ -77,7 +77,7 @@ public class algorithm {
 
     }
     /**
-     * 本部分代码主要解决path sum问题，
+     * 本部分代码主要解决组合数问题，
      * Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
 
      For example,

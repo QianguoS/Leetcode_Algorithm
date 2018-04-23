@@ -78,7 +78,7 @@ public class DTW {
         }
 
         for(int i = 1; i < seq1.length; i++){
-            for(int j = 0; j < seq2.length; j++){
+            for(int j = 1; j < seq2.length; j++){
                 culDistance[i][j] = getMin(culDistance[i-1][j]+ getEucDis(seq1[i],seq2[j]),
                         culDistance[i][j-1] + getEucDis(seq1[i],seq2[j]),
                         culDistance[i-1][j-1]+2 * getEucDis(seq1[i],seq2[j]));

@@ -162,7 +162,7 @@ public class sort_algorithm {
     }
 
     private static void meger(int[] a, int left, int mid, int right) {
-        int[] tempArr = new int[a.length];
+        int[] tempArr = new int[right-left+1];
         int start = left;
         int tmp = 0;
         int R = mid+1;
